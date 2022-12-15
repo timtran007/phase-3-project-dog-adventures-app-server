@@ -14,13 +14,17 @@ class AdventureController < ApplicationController
             notes: params[:notes],
             dog_id: params[:dog_id]
         )
+        adventure.to_json
     end
 
-    patch 'adventures/:id'
+    patch 'adventures/:id' do
         adventure. Adventure.find(:id)
         adventure.update(
             date: params[:date],
             rating: params[:rating],
             notes: params[:notes]
         )
+        adventure.to_json
+    end
+
 end
