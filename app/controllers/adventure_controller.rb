@@ -18,7 +18,7 @@ class AdventureController < ApplicationController
     end
 
     patch 'adventures/:id' do
-        adventure. Adventure.find(:id)
+        adventure = Adventure.find(:id)
         adventure.update(
             date: params[:date],
             rating: params[:rating],
@@ -26,5 +26,8 @@ class AdventureController < ApplicationController
         )
         adventure.to_json
     end
+
+    delete 'adventures/:id' do
+        adventure
 
 end
