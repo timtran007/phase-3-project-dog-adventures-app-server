@@ -24,7 +24,8 @@ post '/adventures' do
     adventure.to_json
 end
 
-patch 'adventures/:id' do
+patch '/adventures/:id' do
+    binding.pry
     adventure = Adventure.find(params[:id])
     adventure.update(
         date: params[:date],
@@ -34,7 +35,7 @@ patch 'adventures/:id' do
     adventure.to_json
 end
 
-delete 'adventures/:id' do
+delete '/adventures/:id' do
     adventure = Adventure.find(params[:id])
     adventure.destroy
     adventure.to_json
