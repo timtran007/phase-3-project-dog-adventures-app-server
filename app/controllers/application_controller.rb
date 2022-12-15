@@ -48,9 +48,12 @@ end
 
 post '/dogs' do
     dog = Dog.create(
-        
+        name: params[:name],
+        breed: params[:breed],
+        personality: params[:personality],
+        dog_img_url: params[:dog_img_url]
     )
-
+    dog.to_json
 end
 
 end
