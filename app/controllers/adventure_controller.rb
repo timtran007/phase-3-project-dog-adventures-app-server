@@ -20,6 +20,7 @@ class AdventureController < ApplicationController
         adventure. Adventure.find(:id)
         adventure.update(
             date: params[:date],
-
+            rating: params[:rating],
+            notes: params[:notes]
         )
 end
