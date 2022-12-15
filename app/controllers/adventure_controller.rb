@@ -29,6 +29,9 @@ class AdventureController < ApplicationController
 
     delete 'adventures/:id' do
         adventure = Adventure.find(params[:id])
+        adventure.destroy
+        adventure.to_json
+    end
 
 
 end
