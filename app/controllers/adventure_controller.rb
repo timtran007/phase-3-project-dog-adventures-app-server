@@ -11,7 +11,15 @@ class AdventureController < ApplicationController
             name_of_place: params[:name_of_place],
             location: params[:location],
             rating: params[:rating],
+            notes: params[:notes],
             dog_id: params[:dog_id]
         )
     end
+
+    patch 'adventures/:id'
+        adventure. Adventure.find(:id)
+        adventure.update(
+            date: params[:date],
+
+        )
 end
