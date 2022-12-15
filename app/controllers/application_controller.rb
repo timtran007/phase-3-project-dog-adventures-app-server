@@ -41,4 +41,16 @@ delete '/adventures/:id' do
     adventure.to_json
 end
 
+get '/dogs' do
+    dogs = Dog.all
+    dogs.to_json
+end
+
+post '/dogs' do
+    dog = Dog.create(
+        
+    )
+
+end
+
 end
