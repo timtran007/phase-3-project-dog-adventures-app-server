@@ -11,7 +11,7 @@ Got a new dog you would like to take on adventures? You can add them to the app 
 
 The Dog Adventure project is broken into two repositories, this one is the back end API application.
 
-You can find the front end repo [here](http://localhost:300).
+You can find the front end repo [here](https://github.com/timtran007/phase-3-project-dog-adventures-client).
 
 ## Installation
 
