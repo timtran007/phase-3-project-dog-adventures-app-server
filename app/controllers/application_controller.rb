@@ -51,7 +51,7 @@ post '/dogs' do
         name: params[:name],
         breed: params[:breed],
         personality: params[:personality],
-        dog_img_url: params[:dog_img_url]
+        img_url: params[:img_url]
     )
     dog.to_json
 end
