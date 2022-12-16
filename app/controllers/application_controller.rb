@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
 
     get '/dogs' do
         dogs = Dog.all
-        dogs.to_json
+        dogs.to_json(include: :adventures)
     end
 
     post '/dogs' do
