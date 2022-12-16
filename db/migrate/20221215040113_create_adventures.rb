@@ -3,7 +3,7 @@ class CreateAdventures < ActiveRecord::Migration[6.1]
     create_table :adventures do |t|
       t.string :image_url
       t.date :date
-      t.string :name_of_place
+      t.string :city
       t.string :location
       t.integer :rating
       t.string :notes
