@@ -15,7 +15,7 @@ post '/adventures' do
     adventure = Adventure.create(
         image_url: params[:image_url],
         date: params[:date],
-        name_of_place: params[:name_of_place],
+        city: params[:city],
         location: params[:location],
         rating: params[:rating],
         notes: params[:notes],
