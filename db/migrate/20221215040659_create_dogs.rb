@@ -4,7 +4,7 @@ class CreateDogs < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :breed
       t.string :personality
-      t.string :dog_img_url
+      t.string :img_url
     end
   end
 end
