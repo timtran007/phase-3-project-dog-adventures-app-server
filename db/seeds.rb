@@ -1,13 +1,15 @@
 puts "🌱 Seeding spices..."
 
-Dog.create(
+
+rex = Dog.create(
     name: "Rex",
     breed: "German Shepherd",
     personality: "shy",
     img_url: "http://dogwalkinghtx.com/wp-content/uploads/2021/09/Rex-Sitting-768x960.jpg"
 )
 
-Dog.create(
+
+bubbles = Dog.create(
     name: "Bubbles",
     breed: "Mix breed",
     personality: "adventurous",
@@ -20,7 +22,7 @@ Adventure.create(
     location: "Red Bud Isle",
     rating: 1,
     notes: "Saw a note dogs can't swim here anymore",
-    dog_id: 1
+    dog_id: rex.id
 )
 
 Adventure.create(
@@ -30,7 +32,7 @@ Adventure.create(
     location: "Grandma's House",
     rating: 5,
     notes: "Wants to play but don't know how to start",
-    dog_id: 1
+    dog_id: rex.id
 )
 
 Adventure.create(
@@ -40,7 +42,7 @@ Adventure.create(
     location: "Austin Vet Hospital",
     rating: 5,
     notes: "Very efficient",
-    dog_id: 2
+    dog_id: bubbles.id
 )
 
 Adventure.create(
@@ -50,7 +52,7 @@ Adventure.create(
     location: "Red Bud Isle",
     rating: 1,
     notes: "Saw a note dogs can't swim here anymore",
-    dog_id: 2
+    dog_id: bubbles.id
 )
 
 Adventure.create(
@@ -60,7 +62,7 @@ Adventure.create(
     location: "Grandma's House",
     rating: 5,
     notes: "Loves playing with other dogs",
-    dog_id: 2
+    dog_id: bubbles.id
 )
 
 
