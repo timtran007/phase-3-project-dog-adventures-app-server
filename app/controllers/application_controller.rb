@@ -19,7 +19,6 @@ class ApplicationController < Sinatra::Base
     end
 
     patch '/adventures/:id' do
-        binding.pry
         adventure = Adventure.find(params[:id])
         adventure.update(
             date: params[:date],
