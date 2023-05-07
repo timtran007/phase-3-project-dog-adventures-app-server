@@ -31,6 +31,12 @@ The code above will migrate the tables necessary for the back end of the applica
 
 ## Usage
 
+### Running the server
+
+```
+rake server run
+```
+
 ### Try out this Active Record Code in the 
 
 ```terminal
